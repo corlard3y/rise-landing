@@ -8,6 +8,7 @@ module.exports = {
         "dark-color": "#2d2d2d",
         stock: "#fff4f0",
         estate: "#f7f2ff",
+        secondary: "#866dc4",
         income: "#ecfefe",
       },
     },

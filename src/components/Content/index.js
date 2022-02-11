@@ -10,6 +10,7 @@ import Arm from "../../assets/img/arm.png";
 import Stocks from "../../assets/img/stocks.png";
 import Estate from "../../assets/img/estate.png";
 import Income from "../../assets/img/income.png";
+import Page from "../../assets/img/Page.png";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -249,7 +250,27 @@ const Content = () => {
         </div>
       </section>
 
-      <section className="mt-20"></section>
+      <section className="mt-24 w-8/12 xl:px-0 mx-auto">
+        <div className="mt-32 flex flex-row justify-evenly items-center">
+          <img src={Page} alt="" className="w-96" />
+
+          <div>
+            <p className="capitalize sans-font">The rise app</p>
+            <h2 className="mt-4 font-bold bold-font text-4xl flex flex-row">
+              Save for your <p className="text-secondary ml-2">future</p>
+            </h2>
+            <p className="sans-font text-md mt-3 text-gray-700">
+              With Rise, you achieve your financial goals faster.<br></br> Save
+              for school, your home, vacations, your<br></br> children’s future
+              and more.
+            </p>
+
+            <button className="bold-font bg-rise-land p-3 text-sm mt-6 text-white rounded-sm">
+              Start Saving
+            </button>
+          </div>
+        </div>
+      </section>
     </Fragment>
   );
 };
