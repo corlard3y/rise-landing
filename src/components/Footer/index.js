@@ -7,58 +7,58 @@ import { BsArrowUpRight } from "react-icons/bs";
 const Footer = () => {
   return (
     <Fragment>
-      <footer className="mt-28 w-11/12 lg:w-8/12 xl:px-0 mx-auto mb-20 flex flex-row flex-wrap justify-between items-start">
-        <div>
+      <footer className="footer-card">
+        <div className="footer-tab">
           <div>
-            <img src={Image} alt="" className="w-16" />
+            <img src={Image} alt="" className="" />
           </div>
-          <ul className="mt-6 sans-font text-gray-600">
-            <li className="mt-4">About us</li>
-            <li className="mt-4">Careers</li>
-            <li className="mt-4">FAQs</li>
-            <li className="mt-4">Contact Info</li>
-            <li className="mt-4">Press</li>
-            <li className="mt-4">Rise Impact</li>
-          </ul>
+          <div className="sans-font">
+            <p>About us</p>
+            <p>Careers</p>
+            <p>FAQs</p>
+            <p>Contact Info</p>
+            <p>Press</p>
+            <p>Rise Impact</p>
+          </div>
         </div>
-        <div>
-          <h3 className="bold-font text-md">Explore</h3>
-          <ul className="mt-6 sans-font text-gray-600">
-            <li className="mt-4 flex flex-row items-center">
+        <div className="footer-tab">
+          <b className="bold-font">Explore</b>
+          <div className="sans-font">
+            <p className="foot">
               Investment Club <BsArrowUpRight className="ml-1" />
-            </li>
-            <li className="mt-4 flex flex-row items-center">
+            </p>
+            <p className="foot">
               Blog <BsArrowUpRight className="ml-1" />
-            </li>
-          </ul>
+            </p>
+          </div>
         </div>
-        <div className="mt-8 md:mt-0">
-          <h3 className="bold-font text-md">Products</h3>
-          <ul className="mt-6 sans-font text-gray-600">
-            <li className="mt-4">Rise App</li>
-            <li className="mt-4">Wallets</li>
-            <li className="mt-4">Assets Classes</li>
-          </ul>
+        <div className="footer-tab">
+          <b className="bold-font">Products</b>
+          <div className="sans-font">
+            <p>Rise App</p>
+            <p>Wallets</p>
+            <p>Assets Classes</p>
+          </div>
         </div>
-        <div className="mt-8 md:mt-0">
-          <h3 className="bold-font text-md">Contact Us</h3>
-          <ul className="mt-6 sans-font text-gray-600">
-            <li className="mt-4 flex flex-row items-center">
+        <div className="footer-tab">
+          <b className="bold-font">Contact Us</b>
+          <div className="sans-font">
+            <p className="foot">
               0818 714 7405 <BsArrowUpRight className="ml-1" />
-            </li>
-            <li className="mt-4 flex flex-row items-center">
+            </p>
+            <p className="foot">
               hello@rise.capital <BsArrowUpRight className="ml-1" />
-            </li>
-            <li className="mt-4 flex flex-row items-center">
+            </p>
+            <p className="foot">
               Newsletter <BsArrowUpRight className="ml-1" />
-            </li>
-            <li className="mt-4 flex flex-row items-center">
+            </p>
+            <p className="foot">
               Instagram <BsArrowUpRight className="ml-1" />
-            </li>
-            <li className="mt-4 flex flex-row items-center">
+            </p>
+            <p className="foot">
               Twitter <BsArrowUpRight className="ml-1" />
-            </li>
-          </ul>
+            </p>
+          </div>
         </div>
       </footer>
     </Fragment>

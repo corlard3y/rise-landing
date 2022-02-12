@@ -4,6 +4,7 @@ import Techstars from "../../assets/img/techstars.png";
 import Western from "../../assets/img/westernunion.png";
 import Section1 from "../../assets/img/section1.png";
 import Section2 from "../../assets/img/section2.png";
+import Section2p from "../../assets/img/section2.webp";
 import Section3 from "../../assets/img/section3.png";
 import Section4 from "../../assets/img/section4.png";
 import Arm from "../../assets/img/arm.png";
@@ -11,6 +12,7 @@ import Stocks from "../../assets/img/stocks.png";
 import Estate from "../../assets/img/estate.png";
 import Income from "../../assets/img/income.png";
 import Page from "../../assets/img/Page.png";
+import Pagep from "../../assets/img/Page.webp";
 import Person from "../../assets/img/persons.png";
 import People from "../../assets/img/people.png";
 import Community from "../../assets/img/Community.png";
@@ -25,21 +27,21 @@ import ImgNextGen from "../utils";
 const Content = () => {
   const cardItem = [
     {
-      color: "bg-stock",
+      color: "#fff4f0",
       image: Stocks,
       title: "Stocks",
       body: "We help you invest and manage your money by investing in our portfolio of 30 high-growth stocks across the US market with our equity portfolio of power stocks.",
       footer: "Learn how Stocks works",
     },
     {
-      color: "bg-estate",
+      color: "#f7f2ff",
       image: Estate,
       title: "Real Estate",
       body: "Our Real Estate plan is the sweet middle. Best for those who want a balance of good returns and medium risk. This plan invests in rented buildings in the US.",
       footer: "Learn how Real Estate works",
     },
     {
-      color: "bg-income",
+      color: "#ecfefe",
       image: Income,
       title: "Fixed Income",
       body: "A low-risk asset perfect for anyone who wants to protect their money in a secure, appreciating currency, i.e. the dollar. For people who want to protect their hard-earned money from inflation while earning steady returns.",
@@ -69,19 +71,19 @@ const Content = () => {
       <p className="bold-font section-first">We are supported by</p>
       <section className="icons-first">
         <div>
-          <img src={Arm} alt="" className="w-16" />
+          <img src={Arm} alt="" className="arm" />
         </div>
 
         <div>
-          <img src={Western} alt="" className="w-44" />
+          <img src={Western} alt="" className="western" />
         </div>
 
         <div>
-          <img src={Techstars} alt="" className="w-36" />
+          <img src={Techstars} alt="" className="stars" />
         </div>
 
         <div>
-          <img src={V} alt="" className="w-16" />
+          <img src={V} alt="" className="arm" />
         </div>
       </section>
 
@@ -114,7 +116,11 @@ const Content = () => {
         </div>
 
         <div className="first-tile">
-          <img src={Section2} alt="" className="image-section" />
+          <ImgNextGen
+            srcWebp={Section2p}
+            fallback={Section2}
+            className="image-section"
+          />
 
           <div className="inner-tile">
             <h2 className="tile-head bold-font">Choose what's best for you</h2>
@@ -173,16 +179,16 @@ const Content = () => {
           <img src={Section4} alt="" className="image-section" />
 
           <div className="inner-tile">
-            <h2 className="tile-head bold-font">
-              We remember so you dont have to
-            </h2>
+            <h2 className="tile-head bold-font">Choose what's best for you</h2>
             <p className="sans-font">
-              Our Auto-invest feature makes it easy to stay consistent, even
+              Our Auto-invest feature makes it easy to stay consistent, even{" "}
+              <br></br>
               when you forget. Set a funding amount, frequency and payment
+              <br></br>
               method and Rise will automatically fund your investment, on
+              <br></br>
               schedule.
             </p>
-
             <div className="regular-font tile-direct">
               Start investing now{" "}
               <FontAwesomeIcon icon={faArrowRight} className="ml-1" />
@@ -200,7 +206,11 @@ const Content = () => {
 
       <section className="sectionize grid-card">
         {cardItem?.map((item, i) => (
-          <div key={i} className={`cards card-after ${item?.color}`}>
+          <div
+            key={i}
+            className={`cards card-after`}
+            style={{ backgroundColor: `${item?.color}` }}
+          >
             <div className="card-top"></div>
             <div className="card-image">
               <img src={item?.image} alt="" className="" />
@@ -212,7 +222,7 @@ const Content = () => {
               <p className="sans-font">{item?.body}</p>
 
               <div className="card-content">
-                <div className="">
+                <div className="sans-font">
                   <span className="">Historical Returns:</span>
                   <span className="sans-font ml-2">14% Per Annum</span>
                 </div>
@@ -234,7 +244,12 @@ const Content = () => {
 
       <section className="sectionize idea">
         <div className="ideal">
-          <img src={Page} alt="" className="image-section" />
+          <ImgNextGen
+            srcWebp={Pagep}
+            fallback={Page}
+            alt={""}
+            className="image-section"
+          />
 
           <div className="idea-page">
             <p className="regular-font">The rise app</p>
@@ -307,7 +322,7 @@ const Content = () => {
 
             <p className="comma-facts">If you want to go far, go together.</p>
 
-            <button className="bold-font bg-new-green p-4 px-4 text-md mt-6 text-dark-color rounded-md">
+            <button className="comma-button bold-font">
               Join our Community
             </button>
           </div>
@@ -317,6 +332,7 @@ const Content = () => {
               srcWebp={Communityp}
               fallback={Community}
               className="image-sect"
+              alt={""}
             />
           </div>
         </div>

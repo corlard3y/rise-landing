@@ -3,8 +3,10 @@ import Logo from "../../assets/img/Group.png";
 import Apple from "../../assets/img/apple.svg";
 import Playstore from "../../assets/img/playstore.svg";
 import Phone from "../../assets/img/Phone.png";
+import Phonep from "../../assets/img/Phone.webp";
 import "../../assets/fonts/TomatoGrotesk-Regular.otf";
 import { AiOutlineArrowDown, AiOutlineAlignRight } from "react-icons/ai";
+import ImgNextGen from "../utils";
 
 const Header = () => {
   return (
@@ -52,11 +54,11 @@ const Header = () => {
               Dollar investments <br></br> that help you grow
             </h1>
 
-            <p className="sans-font header-line">
+            <span className="sans-font header-line">
               We put your money in high quality assets that help you build{" "}
               <br></br>
               wealth and achieve your financial goals.
-            </p>
+            </span>
 
             <div className="sans-font header-fit">
               Your personal wealth manager. Get started with a minimum of $10
@@ -87,8 +89,13 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="">
-            <img src={Phone} alt="" className="image-check" />
+          <div className="image-check">
+            <ImgNextGen
+              srcWebp={Phonep}
+              fallback={Phone}
+              alt={""}
+              className="image-check"
+            />
           </div>
         </section>
       </header>
