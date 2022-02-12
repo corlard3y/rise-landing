@@ -264,17 +264,15 @@ const Content = () => {
         </p>
       </section>
 
-      <div className="hidden lg:block mt-40 w-8/12 xl:px-8 mx-auto">
-        <h1 className="bold-font text-4xl text-rise-land text-center">
-          From The People Who Use Rise
-        </h1>
-        <p className="sans-font mt-4 text-md text-gray-600 text-center">
+      <div className="rise-cap">
+        <h1 className="bold-font">From The People Who Use Rise</h1>
+        <p className="sans-font">
           Our mission at Risevest is to empower more people just like you to{" "}
           <br></br> achieve your personal financial goals.
         </p>
       </div>
 
-      <div className="mt-12 lg:mt-40 px-8 md:hidden mx-auto">
+      <div className="race-cap">
         <h1 className="bold-font text-4xl text-rise-land text-center">
           What our customers are saying
         </h1>
@@ -283,93 +281,87 @@ const Content = () => {
         </p>
       </div>
 
-      <section className="mt-12 w-10/12 xl:px-8 mx-auto grid lg:grid-cols-3 gap-8">
+      <section className="carding">
         {userCards?.map((item, i) => (
-          <div key={i} className="cards-user p-8 flex flex-col justify-between">
-            <p className="sans-font text-gray-600 text-sm">{item?.body}</p>
+          <div key={i} className="cards-user">
+            <p className="sans-font">{item?.body}</p>
 
-            <div className="mt-8 flex flex-row items-center">
-              <img src={item?.image} alt="" className="w-12 h-12" />
-              <span className="ml-4">{item?.name}</span>
+            <div className="">
+              <img src={item?.image} alt="" className="" />
+              <span className="bold-font">{item?.name}</span>
             </div>
           </div>
         ))}
       </section>
 
-      <section className="mt-20 lg:mt-40 w-8/12 xl:px-8 mx-auto">
-        <div className="w-full flex flex-col-reverse lg:flex-row justify-between items-center">
-          <div className="w-full flex flex-col justify-center md:block">
-            <h2 className="mt-4 font-bold bold-font text-center lg:text-left text-4xl flex flex-row">
-              Join The Rise Community
-            </h2>
-            <p className="hidden lg:block sans-font text-md mt-3 text-gray-700">
-              If you want to go far, go together. Our Telegram community{" "}
-              <br></br>
+      <section className="sectionize commute">
+        <div className="comma">
+          <div className="commas">
+            <h2 className="bold-font">Join The Rise Community</h2>
+            <p className="sans-font comma-text">
+              If you want to go far, go together. Our Telegram community
               surrounds you with others who can help you along your financial
-              <br></br>
               journey with tips, support, advice and learning. It's completely
-              <br></br>
               free and open to new and seasoned investors.
             </p>
 
-            <p className="block lg:hidden text-center text-gray-600 mt-4">
-              If you want to go far, go together.
-            </p>
+            <p className="comma-facts">If you want to go far, go together.</p>
 
             <button className="bold-font bg-new-green p-4 px-4 text-md mt-6 text-dark-color rounded-md">
               Join our Community
             </button>
           </div>
 
-          <ImgNextGen
-            srcWebp={Communityp}
-            fallback={Community}
-            className="w-96"
-          />
+          <div>
+            <ImgNextGen
+              srcWebp={Communityp}
+              fallback={Community}
+              className="image-sect"
+            />
+          </div>
         </div>
       </section>
 
-      <section className="mt-40 w-11/12 lg:w-8/12 xl:px-8 mx-auto bg-another-green h-96 pt-8 px-0 lg:p-0 lg:h-96 rounded-lg">
-        <div className="flex flex-col justify-evenly lg:flex-row lg:justify-between lg:items-center h-full mx-auto px-4 lg:px-12">
-          <div className="flex flex-col justify-between text-center lg:text-left">
-            <p className="capitalize sans-font text-rise-land">
-              Download The Rise App
-            </p>
+      <section className="last-card">
+        <div className="last-flex">
+          <div className="last-flow">
+            <p className="last-flowp sans-font">Download The Rise App</p>
 
-            <h2 className="mt-4 font-bold bold-font text-2xl lg:text-4xl flex flex-row">
-              Join our 100,000 users investing and <br></br> setting long term
-              goals!
+            <h2 className="last-cap bold-font">
+              Join our 100,000 users investing and setting long term goals!
             </h2>
 
-            <p className="sans-font mt-8">
+            <p className="sans-font last-flowpp">
               Dollar investments that help you grow
             </p>
 
-            <div className="flex flex-row">
-              <div className="mt-8 sans-font">
-                <div className="bg-dark-color rounded-lg w-40 h-12 p-2 flex flex-row items-center justify-evenly">
-                  <img src={Apple} alt="" className="" />
-                  <div className="text-white text-xs">
-                    <span>Download on the</span>
-                    <p className="font-bold">App Store</p>
+            <div className="header-dis">
+              <button className="sans-font">
+                <div>
+                  <img src={Apple} alt="" />
+                  <div className="header-info">
+                    <p>
+                      Download on the <b>App Store</b>
+                    </p>
                   </div>
                 </div>
-              </div>
+              </button>
 
-              <div className="mt-8 sans-font ml-6">
-                <div className="bg-dark-color rounded-lg w-40 h-12 p-2 flex flex-row items-center justify-evenly">
-                  <img src={Playstore} alt="" className="" />
-                  <div className="text-white text-xs">
-                    <span>Download on the</span>
-                    <p className="font-bold">Play Store</p>
+              <button className="sans-font">
+                <div className="">
+                  <img src={Playstore} alt="" />
+                  <div className="header-info">
+                    <p>
+                      Download on the <b>Play Store</b>
+                    </p>
                   </div>
                 </div>
-              </div>
+              </button>
             </div>
           </div>
 
-          <div className="mx-auto lg:mx-0 side-crop max-h-80 overflow-hidden mt-2 lg:mt-auto">
-            <img src={Phone} alt="" className="w-52 p-4" />
+          <div className="phone">
+            <img src={Phone} alt="" className="" />
           </div>
         </div>
       </section>
