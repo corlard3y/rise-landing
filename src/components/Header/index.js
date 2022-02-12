@@ -67,7 +67,7 @@ const Header = () => {
             <div className="header-dis">
               <button className="sans-font">
                 <div>
-                  <img src={Apple} alt="" />
+                  <img src={Apple} alt="" className="stock" />
                   <div className="header-info">
                     <p>
                       Download on the <b>App Store</b>
@@ -78,7 +78,7 @@ const Header = () => {
 
               <button className="sans-font">
                 <div className="">
-                  <img src={Playstore} alt="" />
+                  <img src={Playstore} alt="" className="stock" />
                   <div className="header-info">
                     <p>
                       Download on the <b>Play Store</b>
