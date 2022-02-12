@@ -48,7 +48,7 @@ const Header = () => {
 
         <section className="header-section">
           <div className="header-text">
-            <h1 className="medium-font header-title">
+            <h1 className="regular-font header-title">
               Dollar investments <br></br> that help you grow
             </h1>
 

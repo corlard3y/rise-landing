@@ -66,10 +66,8 @@ const Content = () => {
   ];
   return (
     <Fragment>
-      <p className="mt-12 bold-font text-greey text-left w-10/12 md:hidden mx-auto">
-        We are supported by
-      </p>
-      <section className="lg:mt-12 w-10/12 md:w-4/12 mx-auto flex flex-row justify-between items-center">
+      <p className="bold-font section-first">We are supported by</p>
+      <section className="icons-first">
         <div>
           <img src={Arm} alt="" className="w-16" />
         </div>
@@ -87,93 +85,83 @@ const Content = () => {
         </div>
       </section>
 
-      <section className="mt-20 w-8/12 xl:px-8 mx-auto">
-        <div className="flex flex-row justify-between items-center">
-          <div className="hidden lg:block">
-            <h2 className="font-bold bold-font text-3xl">
+      <section className="sectionize">
+        <div className="first-tile">
+          <div className="inner-tile">
+            <h2 className="bold-font tile-head">
               Invest your money in dollars
             </h2>
-            <p className="sans-font text-md mt-3 text-gray-700">
+            <p className="sans-font">
               By holding your investments in a stable <br></br>currency, your
               money grows more over <br></br> time and retains its value better.
             </p>
 
-            <p className="regular-font text-md mt-6 text-rise-land">
+            <div className="regular-font tile-direct">
               Start investing now{" "}
               <FontAwesomeIcon icon={faArrowRight} className="ml-1" />
-            </p>
+            </div>
           </div>
-          <img src={Section1} alt="" className="w-96" />
+          <img src={Section1} alt="" className="image-section" />
         </div>
 
-        <div className="md:hidden w-full">
-          <h1 className="font-bold bold-font text-2xl text-center">
-            Superior Performance
-          </h1>
-          <p className="mt-2 sans-font text-center text-gray-400">
+        <div className="section-tile">
+          <h1 className="title-cover bold-font">Superior Performance</h1>
+          <p className="sans-font tile-body">
             Rise outperforms your other alternatives in two ways. The first is
             through our expert, algorithm driven investment approach that picks
             through over 3,000 data sets to find the perfect investment for you.
           </p>
         </div>
 
-        <div className="mt-32 flex flex-row justify-between items-center">
-          <img src={Section2} alt="" className="w-96" />
+        <div className="first-tile">
+          <img src={Section2} alt="" className="image-section" />
 
-          <div className="hidden lg:block">
-            <h2 className="font-bold bold-font text-3xl">
-              Choose what's best for you
-            </h2>
-            <p className="sans-font text-md mt-3 text-gray-700">
+          <div className="inner-tile">
+            <h2 className="tile-head bold-font">Choose what's best for you</h2>
+            <p className="sans-font">
               Unlike other platforms, Rise lets you pick between <br></br>{" "}
               stocks, US real estate and fixed income, according to <br></br>{" "}
               your risk appetite. That way you can spread your risk and{" "}
               <br></br> tap into different investments all in one place.
             </p>
-            <p className="regular-font text-md mt-6 text-rise-land">
+            <div className="regular-font tile-direct">
               Start investing now{" "}
               <FontAwesomeIcon icon={faArrowRight} className="ml-1" />
-            </p>
+            </div>
           </div>
         </div>
 
-        <div className="md:hidden w-full">
-          <h1 className="font-bold bold-font text-2xl text-center">
-            Personalization
-          </h1>
-          <p className="mt-2 sans-font text-center text-gray-400">
+        <div className="section-tile">
+          <h1 className="title-cover bold-font">Personalization</h1>
+          <p className="sans-font tile-body">
             No two people are the same, and everyone’s financial goals are
             different. Rise understands this, which is why we tailor your
             journey to financial freedom to fit you.
           </p>
         </div>
 
-        <div className="mt-32 flex flex-row justify-between items-center">
-          <div className="hidden lg:block">
-            <h2 className="font-bold bold-font text-3xl">
-              Set goals and reach them
-            </h2>
-            <p className="sans-font text-md mt-3 text-gray-700">
+        <div className="first-tile">
+          <div className="inner-tile">
+            <h2 className="tile-head bold-font">Set goals and reach them</h2>
+            <p className="sans-font">
               You can invest towards a goal on Rise--retirement, higher{" "}
               <br></br>
               education, save for your home or travel budgets. Or create a goal
               <br></br>
               of your own and invest periodically to achieve them.
             </p>
-            <p className="regular-font text-md mt-6 text-rise-land">
+            <div className="regular-font tile-direct">
               Start investing now{" "}
               <FontAwesomeIcon icon={faArrowRight} className="ml-1" />
-            </p>
+            </div>
           </div>
 
-          <img src={Section3} alt="" className="w-96" />
+          <img src={Section3} alt="" className="image-section" />
         </div>
 
-        <div className="md:hidden w-full">
-          <h1 className="font-bold bold-font text-2xl text-center">
-            Diversification
-          </h1>
-          <p className="mt-2 sans-font text-center text-gray-400">
+        <div className="section-tile">
+          <h1 className="bold-font title-cover">Diversification</h1>
+          <p className="sans-font tile-body">
             Rise offers a choice of three asset classes: US equities, US real
             estate and fixed income assets to provide stability to your
             investments and protection from market declines. You can pick one
@@ -181,112 +169,92 @@ const Content = () => {
           </p>
         </div>
 
-        <div className="mt-32 hidden lg:flex flex-row justify-between items-center">
-          <img src={Section4} alt="" className="w-96" />
+        <div className="first-tile hidden">
+          <img src={Section4} alt="" className="image-section" />
 
-          <div>
-            <h2 className="font-bold bold-font text-3xl">
+          <div className="inner-tile">
+            <h2 className="tile-head bold-font">
               We remember so you dont have to
             </h2>
-            <p className="sans-font text-md mt-3 text-gray-700">
+            <p className="sans-font">
               Our Auto-invest feature makes it easy to stay consistent, even
-              <br></br>
               when you forget. Set a funding amount, frequency and payment
-              <br></br>
               method and Rise will automatically fund your investment, on
-              <br></br>
               schedule.
             </p>
 
-            <p className="regular-font text-md mt-6 text-rise-land">
+            <div className="regular-font tile-direct">
               Start investing now{" "}
               <FontAwesomeIcon icon={faArrowRight} className="ml-1" />
-            </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <div className="mt-24 w-8/12 xl:px-8 mx-auto">
-        <h1 className="bold-font text-4xl text-center">Asset Classes</h1>
-        <p className="sans-font mt-4 text-md text-center">
+      <div className="sectionize">
+        <h1 className="bold-font head-title">Asset Classes</h1>
+        <p className="sans-font head-body">
           It’s your money, choose where you invest it
         </p>
       </div>
 
-      <section className="mt-12 w-8/12 xl:px-8 mx-auto grid lg:grid-cols-3 gap-4">
+      <section className="sectionize grid-card">
         {cardItem?.map((item, i) => (
-          <div
-            key={i}
-            className={`cards w-full border border-gray-200 shadow-sm rounded-2xl ${item?.color} flex-col h-full`}
-          >
-            <div className="h-8 rounded-t-lg"></div>
-            <div className="w-full ">
-              <img
-                src={item?.image}
-                alt=""
-                className="w-24 relative top-12 mx-auto border-8 border-white rounded-full"
-              />
+          <div key={i} className={`cards card-after ${item?.color}`}>
+            <div className="card-top"></div>
+            <div className="card-image">
+              <img src={item?.image} alt="" className="" />
             </div>
 
-            <div className="p-6 rounded-2xl bg-white flex-1 min-h-96 lg:h-96 flex flex-col justify-between">
-              <h1 className="mt-8 medium-font text-xl text-center">
-                {item?.title}
-              </h1>
+            <div className="card-body">
+              <h1 className="medium-font">{item?.title}</h1>
 
-              <p className="mt-4 lg:mt-0 sans-font text-gray-500 text-md text-center">
-                {item?.body}
-              </p>
+              <p className="sans-font">{item?.body}</p>
 
-              <div>
-                <div className="text-center">
-                  <span className="text-gray-400 regular-font">
-                    Historical Returns:
-                  </span>
+              <div className="card-content">
+                <div className="">
+                  <span className="">Historical Returns:</span>
                   <span className="sans-font ml-2">14% Per Annum</span>
                 </div>
 
-                <div className="text-center">
-                  <span className="text-gray-400 regular-font">
-                    Risk Level:
-                  </span>
+                <div className="">
+                  <span className="">Risk Level:</span>
                   <span className="sans-font ml-2">High</span>
                 </div>
               </div>
 
-              <p className="regular-font text-rise-land text-sm lg:text-md text-center mt-4 lg:mt-0">
+              <div className="regular-font card-link">
                 {item?.footer}
                 <FontAwesomeIcon icon={faArrowRight} className="ml-1" />
-              </p>
+              </div>
             </div>
           </div>
         ))}
       </section>
 
-      <section className="hidden lg:block mt-24 w-8/12 xl:px-0 mx-auto">
-        <div className="mt-32 flex flex-row justify-evenly items-center">
-          <img src={Page} alt="" className="w-96" />
+      <section className="sectionize idea">
+        <div className="ideal">
+          <img src={Page} alt="" className="image-section" />
 
-          <div>
-            <p className="capitalize sans-font">The rise app</p>
-            <h2 className="mt-4 font-bold bold-font text-4xl flex flex-row">
-              Save for your <p className="text-secondary ml-2">future</p>
+          <div className="idea-page">
+            <p className="regular-font">The rise app</p>
+            <h2 className="bold-font">
+              Save for your <b> future</b>
             </h2>
-            <p className="sans-font text-md mt-3 text-gray-700">
+            <p className="sans-font">
               With Rise, you achieve your financial goals faster.<br></br> Save
               for school, your home, vacations, your<br></br> children’s future
               and more.
             </p>
 
-            <button className="bold-font bg-rise-land p-3 text-sm mt-6 text-white rounded-sm">
-              Start Saving
-            </button>
+            <button className="bold-font">Start Saving</button>
           </div>
         </div>
       </section>
 
-      <section className="h-96 section mt-40 flex flex-col justify-center items-center">
-        <h1 className="bold-font text-4xl text-center">How we are Regulated</h1>
-        <p className="text-center sans-font px-4 mt-6 text-gray-600 lg:w-1/2">
+      <section className="section">
+        <h1 className="bold-font">How we are Regulated</h1>
+        <p className="sans-font">
           Rise is registered and regulated both in the US and in Nigeria. The
           founder is registered as an investment adviser with the US SEC. The
           Nigerian SEC regulates Rise's Nigerian investments through a
