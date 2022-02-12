@@ -1,20 +1,3 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
-
-:root {
-  --rise-land: "#06969E";
-  --rise-dark: "#0698A0";
-  --dark-color: "#2d2d2d",
-  --stock: "#fff4f0",
-  --estate: "#f7f2ff",
-  --secondary: "#866dc4",
-  --income: "#ecfefe",
-  --new-green: "#A0DDE2",
-  --another-green: "#E6F5F6",
-  --greey: "#838383",
-}
-
 @font-face {
   font-family: "TomatoGrotesk";
   src: local("TomatoGrotesk"),
@@ -86,7 +69,19 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  text-decoration:none;
+  text-decoration: none;
+}
+.links li .active::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #0698a0;
+  text-align: center;
+  position: relative;
+  top: 15px;
+  left: -45%;
+  border-radius: 50%;
 }
 
 .links-icon {
@@ -205,7 +200,7 @@
 .header-dis button:nth-child(2) {
   margin-left: 1rem;
 }
-.stock{
+.stock {
   width: 35px;
 }
 
@@ -219,7 +214,7 @@
   padding: 10px;
   height: 40px;
   border-radius: 10px;
-  text-align: left
+  text-align: left;
 }
 
 .header-info {
@@ -316,7 +311,7 @@
   justify-content: center;
 }
 .card-image img {
-  width:6rem;
+  width: 6rem;
   position: relative;
   top: 4rem;
   border: 1rem solid white;
@@ -446,14 +441,13 @@
   width: 80%;
 }
 .comma-button {
-  background-color:#A0DDE2;
+  background-color: #a0dde2;
   padding: 15px 30px;
   margin-top: 1rem;
- color: #2d2d2d;
- border-radius: 5px;
- border: none;
- font-size: large;
-
+  color: #2d2d2d;
+  border-radius: 5px;
+  border: none;
+  font-size: large;
 }
 
 .comma-facts {
@@ -510,7 +504,7 @@
 
 .footer-card {
   width: 62%;
-  margin: 10rem auto;
+  margin: 8rem auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -526,20 +520,20 @@
 }
 
 .footer-tab div p {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 .foot {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.arm{
+.arm {
   width: 4rem;
 }
 .western {
   width: 11rem;
 }
-.stars{
+.stars {
   width: 9rem;
 }
 
@@ -649,13 +643,13 @@
   .icons-first {
     width: 80%;
   }
-  .arm{
+  .arm {
     width: 40px;
   }
-  .stars{
+  .stars {
     width: 60px;
   }
-  .western{
+  .western {
     width: 60px;
   }
   .inner-tile {
@@ -755,8 +749,11 @@
   .footer-tab {
     margin-top: 2rem;
   }
-  .image-section{
-  width: 90%;
+  .image-section {
+    width: 90%;
+  }
+  .footer-tab {
+    flex-basis: 50%;
   }
 }
 
