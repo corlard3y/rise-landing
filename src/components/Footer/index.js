@@ -1,7 +1,5 @@
 import React, { Fragment } from "react";
 import Image from "../../assets/img/rise.png";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { BsArrowUpRight } from "react-icons/bs";
 
 const Footer = () => {
